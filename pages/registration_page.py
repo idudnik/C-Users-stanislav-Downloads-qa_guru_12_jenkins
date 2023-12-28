@@ -29,7 +29,7 @@ class RegistationPage:
         self.registered_user_data = browser.all('tbody tr td:last-child')
 
     def open(self):
-        browser.open("/automation-practice-form")
+        browser.open('/automation-practice-form')
 
     def fill_first_name(self, value):
         self.first_name.type(value)
