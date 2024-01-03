@@ -7,9 +7,12 @@ from selenium.webdriver.chrome.options import Options
 from selene import browser
 
 from utils import attach
+
+
 @pytest.fixture(scope='session', autouse=True)
 def load_env():
     load_dotenv()
+
 
 @pytest.fixture(scope='function', autouse=True)
 def browser_management():
@@ -41,25 +44,12 @@ def browser_management():
     attach.add_video(browser)
     browser.quit()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
- #
- #
- #
- #
- # print("preparing settings for the code executing")
- #    # browser.config.base_url = 'https://demoqa.com'
- #    browser.config.timeout = 6.0
- #    # browser.config.window_width = 1900
- #    # browser.config.window_height = 950
+#
+#
+#
+#
+# print("preparing settings for the code executing")
+#    # browser.config.base_url = 'https://demoqa.com'
+#    browser.config.timeout = 6.0
+#    # browser.config.window_width = 1900
+#    # browser.config.window_height = 950
